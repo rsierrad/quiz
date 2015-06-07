@@ -12,3 +12,7 @@ exports.answer = function(req, res) {
     res.render('quizes/answer', {respuesta: 'Incorrecto'});
   }
 };
+
+exports.author = function(req, res) {
+  res.render('author.ejs', {foto: 'images/foto.png', author: 'Rubén Sierra', video: 'videos/video.mp4'});
+};
